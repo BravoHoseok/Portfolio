@@ -388,7 +388,7 @@ small {
     top: initial;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   h2 {
     font-size: 22px;
     line-height: 200%;
