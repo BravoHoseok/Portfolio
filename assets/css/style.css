@@ -32,7 +32,7 @@ nav i {
 }
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 250px;
+  padding-left: 225px;
 }
 dl {
   margin-top: 0.5rem;
@@ -56,7 +56,7 @@ dt {
   color: white;
 }
 ul.side-nav {
-  width: 250px;
+  width: 225px;
 }
 ul.side-nav li {
   padding: 0;
