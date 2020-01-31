@@ -1,1 +1,0 @@
-Embedded Software Engineer experienced in full project life cycle from desing to production in a field of embedded system on RTOS and Non-RTOS
