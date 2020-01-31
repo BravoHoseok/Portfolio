@@ -32,7 +32,7 @@ nav i {
 }
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  padding-left: 250px;
 }
 dl {
   margin-top: 0.5rem;
@@ -56,7 +56,7 @@ dt {
   color: white;
 }
 ul.side-nav {
-  width: 190px;
+  width: 250px;
 }
 ul.side-nav li {
   padding: 0;
@@ -78,7 +78,7 @@ ul.side-nav.fixed li.logo {
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
-  padding: 30px 30px 40px;
+  padding: 20px 10px 10px;
 }
 ul.side-nav.fixed li.logo a {
   font-weight: 200;
@@ -95,13 +95,15 @@ ul#slide-out li:not(.logo) a span {
 }
 li.logo span {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: inherit;
+  padding-top: 3px;
 }
 .brand-logo h1 {
-  font-size: inherit;
+  font-size: xx-large;
   line-height: inherit;
   margin: inherit;
-  font-weight: inherit;
+  font-weight: 400;
 }
 .container {
   width: 95%;
@@ -388,7 +390,7 @@ small {
     top: initial;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   h2 {
     font-size: 22px;
     line-height: 200%;
