@@ -121,7 +121,7 @@ h3 {
   position: relative;
 }
 .full-height {
-  height: 30vh;
+  height: 28vh;
 }
 #intro.section {
   background: url(../../assets/img/andrew-borstein-2a.jpg) no-repeat top
@@ -138,7 +138,7 @@ h3 {
 #intro.section .container *:not(span) {
   font-weight: 300;
   line-height: 150%;
-  padding: 0 30px;
+  padding: 0px 0px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 #intro.section .underline {
