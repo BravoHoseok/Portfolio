@@ -121,10 +121,10 @@ h3 {
   position: relative;
 }
 .full-height {
-  height: 50vh;
+  height: 90vh;
 }
 #intro.section {
-  background: url(../../assets/img/bgtop.png) no-repeat top
+  background: url(../../assets/img/bgtop3.jpg) no-repeat top
     center/cover;
   position: relative;
 }
