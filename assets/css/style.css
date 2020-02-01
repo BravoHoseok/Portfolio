@@ -142,7 +142,7 @@ h3 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 #intro.section .underline {
-  border-bottom: 5px solid #009688;
+  border-bottom: 5px solid #FFBF00;
 }
 #intro.section .teal {
   padding: 0 10px;
@@ -298,10 +298,10 @@ small {
   color: #666 !important;
 }
 .teal-text {
-  color: #008073 !important;
+  color: #FFBF00 !important;
 }
 .teal {
-  background-color: #008073 !important;
+  background-color: #FFBF00 !important;
 }
 @media (min-width: 1200px) {
   #experience .container {
