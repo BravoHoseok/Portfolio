@@ -134,6 +134,7 @@ h3 {
   left: 0;
   position: absolute;
   top: 0;
+  padding-left: 220px;
 }
 #intro.section .container *:not(span) {
   font-weight: 300;
