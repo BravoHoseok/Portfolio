@@ -223,6 +223,7 @@ h3 {
 }
 .card .card-title {
   font-size: 20px;
+  font-weight: 500;
 }
 .card .card-content .card-title {
   line-height: 2.5rem;
