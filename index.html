@@ -631,14 +631,14 @@
                   <ul>
                     <li>
                         <p>
-                        <strong>Challenge1</strong>  : Because small space in the controller, rotary touch sensors have to be made in samll. So, sensitivity was very poor and even not uniform according to position on rotary touch sensor in order to provide tap touch function. it could cause malfunction<br>
-                        <strong>Solution1</strong> : Checked sensitivity from edge to edge at interval of 1mm. And then made the array table according to possition. As developing algorighm by using interpolation and burst function which handle touch physical sensors, sensitivity could be uniformed and improved.
+                        <strong>Challenge1</strong>  : Because rotary touch sensors are samll. So, sensitivity was very poor and not uniform according to position to provide reliability function.<br>
+                        <strong>Solution1</strong> : Checked sensitivity from edge to edge at interval of 1mm. And then made the array table according to possition. As developing algorighm by using interpolation, sensitivity could be uniformed and improved.
                         </p>
                     </li>
                     <li>
                         <p>
-                        <strong>Challenge2</strong>  : Becasue severial microprocessor MIPS are different according to used ones in our products, communication timming was problem, when commucating between each microprocessor and updating complete product in car.<br>
-                        <strong>Solution2</strong> : To improve timming issue, I set one IO port which infrom processing(store, delete, load) of touch microprocessor(slow). Main microprocessor always check this IO port before starting communication. And also, designed update concept, sequence, function to provide update function. After implementing software, I spent almost of my time in debugging to check max latancy time in the situation of full overload.
+                        <strong>Challenge2</strong>  : Becasue used severial microprocessor MIPS are different, communication timming was problem, when commucating between each microprocessor and updating complete product.<br>
+                        <strong>Solution2</strong> : To improve timming issue, I set one IO port which infrom processing(store, delete, load) of slow microprocessor. Main microprocessor check this port before starting communication. And also, designed update concept, sequence, function to provide update function. After implementing software, I spent almost of my time in debugging to check max latancy time in full overload situation.
                         </p> 
                     </li>
                   </ul>
