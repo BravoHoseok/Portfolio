@@ -703,19 +703,19 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title brown-text"
-                    >Challenge and Solutions<i class="mdi-navigation-close right"></i
+                    >Challenges and Solutions<i class="mdi-navigation-close right"></i
                   ></span>
                   <ul>
                     <li>
                         <p>
-                        <strong>Challenge1</strong>  : Typing touch coordinates manually according to a number of variant is too time consuming works and it was difficult to find error.<br>
-                        <strong>Solution1</strong> : Implemented auto code generation and verification tool by using VBA programming. Working time is saved from 8hr to 1hr.
+                        <strong>Challenge1</strong> : Because proximity touch sensor was very small and hardware pcb didn't provide reliability in the situation of current flow fluctuation, sensitivity was very poor and there are a lot of noise which caused false function.<br>
+                        <strong>Solution1</strong> : To improve sensitivity, I increased software gain. And in order to suppress noise which casued by increased gain, I implemented filter combination algorithm(Median + Kalman). After that, to speed up response time of signal, I developed pre-emphasis algorithm which have different weight according to specified range.
                         </p>
                     </li>
                     <li>
                         <p>
-                        <strong>Challenge2</strong>  : There was no specification for touch function. So, we had always arguments with customer and cooperator.<br>
-                        <strong>Solution2</strong> : Studied 1,000 pages datasheet and documentated specification according to touch IC internal function in detail. After establishing test procedure, verified and tuned complete product with cooperator based on this document by using robot arm machine. We satisfy customer requirments.
+                        <strong>Challenge2</strong>  : When I communicated with 8bit microprocessor by using I2C, there was stop phenomenon of one's processing in initial stage, for this one has only 1 interrupt vector and I2C interrupt signal disturb mian touch ADC processing.<br>
+                        <strong>Solution2</strong> : Checked free time between end of ADC processing and restart of one. This time was indicated by IO port which connected between two processors. I got I2C communication of 1 byte to perform only during this time.
                         </p> 
                     </li>
                   </ul>
@@ -766,13 +766,13 @@
                   <ul>
                     <span class="card-title brown-text">What I do</span>
                     <li>
-                        Programmed driver(I2C,ADC) and app software of 16-bit, 8-bit microprocessor at the same time
+                        Programmed driver(I2C,ADC) and app software on 16-bit, 8-bit microprocessor at the same time
                     </li>
                     <li>
                         Implemented software dimming control which detects analog signal and convert to pwm pulse with desired freq and duty
                     </li>
                     <li>
-                        Designed and developed algorithm such as filter(1D Kalman, Butterworth, Log), analog signal boosting(Pre-emphasis), Tracking which follow original signal(IIR)
+                        Designed and developed algorithm such as filter(1D Kalman, Butterworth, Log), SNR improvement(Pre-emphasis), Tracking which follow original signal(IIR)
                     </li>
                     <li>
                         Realized FBL in 8bit micom, Gateway function in 16bit micom, external update tool software based on USD on CAN
@@ -784,7 +784,7 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title brown-text"
-                    >Challenge and Solutions<i class="mdi-navigation-close right"></i
+                    >Challenges and Solutions<i class="mdi-navigation-close right"></i
                   ></span>
                   <ul>
                     <li>
