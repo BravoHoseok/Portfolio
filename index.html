@@ -708,14 +708,14 @@
                   <ul>
                     <li>
                         <p>
-                        <strong>Challenge1</strong> : Because proximity touch sensor was very small and hardware pcb didn't provide reliability in the situation of current flow fluctuation, sensitivity was very poor and there are a lot of noise which caused false function.<br>
-                        <strong>Solution1</strong> : To improve sensitivity, I increased software gain. And in order to suppress noise which casued by increased gain, I implemented filter combination algorithm(Median + Kalman). After that, to speed up response time of signal, I developed pre-emphasis algorithm which have different weight according to specified range.
+                        <strong>Challenge1</strong> : Because proximity touch sensor was very small and noise was injected from hardware pcb, sensitivity was very poor and noise caused false function.<br>
+                        <strong>Solution1</strong> : I increased software gain to improve sensitivity and implemented filter combination algorithm(Median + Kalman) to suppress noise which casued by gain. And also I developed pre-emphasis algorithm which have different weight according to specified range to speed up response time. 
                         </p>
                     </li>
                     <li>
                         <p>
-                        <strong>Challenge2</strong>  : When I communicated with 8bit-microprocessor by using I2C, there was stop phenomenon of one's processing in initial stage, for this one has only 1 interrupt vector and I2C interrupt signal disturbed mian touch ADC processing.<br>
-                        <strong>Solution2</strong> : Checked free time between end of ADC processing and restart of one. This time was indicated by IO port which connected between two processors. I got I2C communication of 1 byte to perform only during this time.
+                        <strong>Challenge2</strong>  : When I communicated with 8bit-microprocessor through I2C, there was stop issue of main processing, for this one provide only 1 interrupt vector and I2C interrupt disturbed mian ADC processing.<br>
+                        <strong>Solution2</strong> : Checked free time between end and restart of of ADC processing. This time was indicated by IO port which connected between two processors. I got I2C communication of 1 byte to perform only during this time.
                         </p> 
                     </li>
                   </ul>
