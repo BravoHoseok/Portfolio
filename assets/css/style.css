@@ -429,4 +429,7 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+    right: 0;
+    }
 }
