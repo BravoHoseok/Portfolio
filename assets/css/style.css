@@ -196,7 +196,7 @@ h3 {
   text-transform: uppercase;
 }
 #experience .card-action {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.08);
   border: none;
 }
 #experience .card .col.s12.m2 a {
