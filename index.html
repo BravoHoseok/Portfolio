@@ -553,7 +553,7 @@
                         Defined the functional specification of the screen touch system and the verification process of it
                     </li>       
                     <p>
-                        &#x1F4E3; For more detailed information, please click above 'Git-Hub Icon'
+                        &#x1F4E3; For more details, please click above 'Git-Hub Icon'
                     </p>  
                  </ul>
                 </div>
@@ -603,16 +603,15 @@
             
             <!-- Prj IONIQ-->
             <div class="col s12 m6 l4" style ="width:100%">
-              <div class="card medium">       
+              <div class="card medium" style="height:470px !important">       
                 <div class="card-image waves-effect waves-block waves-light" style="width : 350px; height :100%; float:left">
                   <img
                     alt="Screenshot of IONIQ"
                     src="assets/img/Prj_AEPE.jpg"
-                    class="activator"
                   />
                 </div>
                 <div class="card-content" style="height:fit-content">
-                  <span class="card-title activator teal-text hoverline" style="font-size:x-large; font-weight:400;"
+                  <span class="card-title teal-text hoverline" style="font-size:x-large; font-weight:400;"
                     >IONIQ HEV/EV (AE PE/ AEEV PE)
                         <a
                           aria-label="Visit the GitHub repo for chllenge solution"
@@ -633,23 +632,26 @@
                   <ul>
                     <span class="card-title brown-text">Development History</span>
                     <li>
-                        Programmed driver(SPI,NVM,ADC,POR) and app software of 32-bit, two 8-bit microprocessor at the same time
+                        Devised a function that receives input information (touch) through SPI, that converts the information to gesture data through algorithms, and that sends the data a key software module
                     </li>
                     <li>
-                        Developed algorithm of extracting position coordinates from just 3-node rotary sensors and changeable threshold algorithm by using interpolation
+                        Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
                     </li>
                     <li>
-                        Realized FBL in 8bit micom, Gateway function in 32bit micom, external update tool software based on USD on CAN
+                        Programmed MCU device drivers, applications(gesture), and software of ‘0D and 1D Touch System’, integrating programs into the SW platform
                     </li>
                     <li>
-                        Implemented rotary geusture algorithm to control temperature set
+                        Implemented SPI communication driver software between two microprocessors that have heterogeneous operation speed by applying a ready port concept that alerts a state of the low performance microprocessor
                     </li>
                     <li>
-                        Made filter algorithm and partial burst function to improve noise immunity of touch analog signal
+                        Realized filter (Median, Kalman), variable threshold combined with 2D interpolation, and position generation algorithms
                     </li>
                     <li>
-                        Did Script programming which merge FBL and app with validation checking according to memory structure
+                        Created 8-bit microprocessor update system through Diagnostic-CAN protocol: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-SPI), Script Tool converting hex files
                     </li>
+                    <p>
+                        &#x1F4E3; For more details, please click above 'Git-Hub Icon'
+                    </p> 
                   </ul>
                 </div>
                 <!--<div class="card-reveal">
