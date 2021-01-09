@@ -535,7 +535,7 @@
                   <ul>
                     <span class="card-title brown-text">Development History</span>
                     <li>
-                        Devised a function that receives input information (touch) through I2C, that converts the information to gesture data through algorithms, and that sends the data HMI (graphic software module) and an HVAC main controller via CAN
+                        Devised a system that receives input information (touch) through I2C, that converts the information to gesture data through algorithms, and that sends the data HMI (graphic software module) and an HVAC main controller via CAN
                     </li>
                     <li>
                         Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
@@ -632,7 +632,7 @@
                   <ul>
                     <span class="card-title brown-text">Development History</span>
                     <li>
-                        Devised a function that receives input information (touch) through SPI, that converts the information to gesture data through algorithms, and that sends the data a key software module
+                        Devised a system that receives input information (touch) through SPI, that converts the information to gesture data through algorithms, and that sends the data a key software module
                     </li>
                     <li>
                         Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
@@ -647,32 +647,13 @@
                         Realized filter (Median, Kalman), variable threshold, and position generation algorithms
                     </li>
                     <li>
-                        Created 8-bit microprocessor update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-SPI), Script Tool converting Hex files
+                        Created two 8-bit microprocessor update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-SPI), Script Tool converting Hex files
                     </li>
                     <p>
                         &#x1F4E3; For more details, please click above 'Git-Hub Icon'
                     </p> 
                   </ul>
                 </div>
-                <!--<div class="card-reveal">
-                  <span class="card-title brown-text"
-                    >Challenges and Solutions<i class="mdi-navigation-close right"></i
-                  ></span>
-                  <ul>
-                    <li>
-                        <p>
-                        <strong>Challenge1</strong>  : Because rotary touch sensors are samll. So, sensitivity was very poor and not uniform according to position to provide reliability function.<br>
-                        <strong>Solution1</strong> : Checked sensitivity from edge to edge at interval of 1mm. And then made the array table according to possition. As developing algorighm by using interpolation, sensitivity could be uniformed and improved.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                        <strong>Challenge2</strong>  : Becasue used severial microprocessor MIPS are different, communication timming was problem, when commucating between each microprocessor and updating complete product.<br>
-                        <strong>Solution2</strong> : To improve timming issue, I designed update system and set one IO port which infrom processing(store, delete, load) of slow microprocessor. Main microprocessor check this port before starting communication. And also, checked max latancy time in full overload.
-                        </p> 
-                    </li>
-                  </ul>
-                </div>-->
               </div>
             </div>
             <!-- End of Prj IONIQ-->
@@ -708,19 +689,22 @@
                   <ul>
                     <span class="card-title brown-text">Development History</span>
                     <li>
-                        Programmed driver(I2C,ADC) and app software of 16-bit, 8-bit microprocessor at the same time
+                        Devised a system that receives input information (touch) through I2C, that recognizes proximity gestures, that contols background illumination through algorithms, and that sends key information a main HVAC controller
                     </li>
                     <li>
-                        Implemented software dimming control which detects analog signal and convert to pwm pulse with desired freq and duty
+                        Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
                     </li>
                     <li>
-                        Designed and developed algorithm such as filter(1D Kalman, Butterworth, Log), analog signal boosting(Pre-emphasis), Tracking which follow original signal(IIR)
+                        Programmed MCU device drivers and software 'Touch System’, integrating them into the SW platform
                     </li>
                     <li>
-                        Realized FBL in 8bit micom, Gateway function in 16bit micom, external update tool software based on USD on CAN
+                        Stablized unstable touch software platform provided by a supplier, sucessfully releasing it     
                     </li>
                     <li>
-                        Did Script programming which merge FBL and app with validation checking according to memory structure
+                        Realized a software algorithm combined with filter (Median, Kalmanm Butterworth), fast reference tracking(IIR), and analog signal boosting(pre-emphasis)
+                    </li>
+                    <li>
+                        Created 8-bit microprocessor update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-I2C), Script Tool converting Hex files
                     </li>
                     <p>
                         &#x1F4E3; For more details, please click above 'Git-Hub Icon'
@@ -738,20 +722,29 @@
                   <img
                     alt="Screenshot of Tusson,Sportage"
                     src="assets/img/prj_TLQL.jpg"
-                    class="activator"
                   />
                 </div>
                 <div class="card-content" style="height:fit-content">
-                  <span class="card-title activator teal-text hoverline" style="font-size:x-large; font-weight:400;"
-                    >Tusson, Sportage <i class="mdi-navigation-more-vert right"></i
-                  ></span>
+                  <span class="card-title teal-text hoverline" style="font-size:x-large; font-weight:400;"
+                    >Tusson(TL_PE), Sportage(QL_PE)
+                        <a
+                          aria-label="Visit the GitHub repo for chllenge solution"
+                          href="https://github.com/BravoHoseok/THe-K9"
+                          target="_blank"
+                          data-position="top"
+                          data-tooltip="Click to view details, research and solution"
+                          class="btn-floating btn-medium waves-effect waves-light brown tooltipped"
+                          style="float:right; margin-right:0 !important"  
+                          ><i class="fa fa-github"></i
+                        ></a>
+                  </span>
                   <p>
                     <em class="grey-text">
-                        Controller providing full automate temperature function
+                        FATC Controller
                     </em>           
                   </p>
                   <ul>
-                    <span class="card-title brown-text">What I do</span>
+                    <span class="card-title brown-text">Development History</span>
                     <li>
                         Developed climate controll application according to customer requirments
                     </li>
@@ -767,40 +760,10 @@
                     <li>
                         Logic test by using debugubg tool and simulator
                     </li>
+                    <p>
+                        &#x1F4E3; For more details, please click above 'Git-Hub Icon'
+                    </p>
                   </ul>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title brown-text"
-                    >Challenges and Solutions<i class="mdi-navigation-close right"></i
-                  ></span>
-                  <ul>
-                    <li>
-                        <p>
-                        <strong>Challenge1</strong>  : There was too many specification change. And also, Because sentences in the requirments were very vague, we had always arguments of problems.<br>
-                        <strong>Solution1</strong> : Whenever I received requirments, I documented open issue list after reviewing requirments. After that, I discussed with customer to fix meaning of sentences in the specification. As a result, filed issue was decreased.
-                        </p>
-                    </li>
-                  </ul>
-                                      
-                  <!-- <div class="card-action">
-                    <a
-                      aria-label="Visit Interpol8r web app"
-                      href="https://interpol8r.herokuapp.com/"
-                      target="_blank"
-                      data-position="top"
-                      data-tooltip="View Online"
-                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                      ><i class="fa fa-external-link"></i></a>
-                    <a
-                      aria-label="Visit the GitHub repo for chllenge solution"
-                      href="https://github.com/BravoHoseok/Genesis-GV80"
-                      target="_blank"
-                      data-position="top"
-                      data-tooltip="View Materials"
-                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                      ><i class="fa fa-github"></i
-                    ></a>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -813,19 +776,29 @@
                   <img
                     alt="Screenshot of Advanced Prj"
                     src="assets/img/Prj_others.jpg"
-                    class="activator"
                   />
                 </div>
                 <div class="card-content" style="height:fit-content">
-                  <span class="card-title activator teal-text hoverline" style="font-size:x-large; font-weight:400;"
-                    >New CCH</span>
+                  <span class="card-title teal-text hoverline" style="font-size:x-large; font-weight:400;"
+                    >New CCH
+                        <a
+                          aria-label="Visit the GitHub repo for chllenge solution"
+                          href="https://github.com/BravoHoseok/THe-K9"
+                          target="_blank"
+                          data-position="top"
+                          data-tooltip="Click to view details, research and solution"
+                          class="btn-floating btn-medium waves-effect waves-light brown tooltipped"
+                          style="float:right; margin-right:0 !important"  
+                          ><i class="fa fa-github"></i
+                        ></a>
+                  </span>
                   <p>
                     <em class="grey-text">
                         Display diffrence between temperature set and inner one. This project was conducted with HKMC America team.
                     </em>           
                   </p>
                   <ul>
-                    <span class="card-title brown-text">What I do</span>
+                    <span class="card-title brown-text">Development History</span>
                     <li>
                         Implemented LCD control driver and application
                     </li>
@@ -833,7 +806,7 @@
                         Developed three dimension interpolation(x,y,z) to extract specific value in the table
                     </li>
                   </ul>
-                  <span class="card-title activator teal-text hoverline" style="font-size:x-large; font-weight:400;"
+                  <span class="card-title teal-text hoverline" style="font-size:x-large; font-weight:400;"
                     >NIIS</span>
                   <p>
                     <em class="grey-text">
@@ -841,59 +814,21 @@
                     </em>           
                   </p>
                   <ul>
-                    <span class="card-title brown-text">What I do</span>
+                    <span class="card-title brown-text">Development History</span>
                     <li>
                         Implemented I2C driver module
                     </li>
                     <li>
                         Developed calculation application algorithm
                     </li>
+                    <p>
+                        &#x1F4E3; For more details, please click above 'Git-Hub Icon'
+                    </p>
                   </ul>
                 </div>
-                <!--
-                <div class="card-reveal">
-                  <span class="card-title brown-text"
-                    >Challenge and Solutions<i class="mdi-navigation-close right"></i
-                  ></span>
-                  <ul>
-                    <li>
-                        <p>
-                        <strong>Challenge1</strong>  : Typing touch coordinates manually according to a number of variant is too time consuming works and it was difficult to find error.<br>
-                        <strong>Solution1</strong> : Implemented auto code generation and verification tool by using VBA programming. Working time is saved from 8hr to 1hr.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                        <strong>Challenge2</strong>  : There was no specification for touch function. So, we had always arguments with customer and cooperator.<br>
-                        <strong>Solution2</strong> : Studied 1,000 pages datasheet and documentated specification according to touch IC internal function in detail. After establishing test procedure, verified and tuned complete product with cooperator based on this document by using robot arm machine. We satisfy customer requirments.
-                        </p> 
-                    </li>
-                  </ul>
-                                      
-                  <div class="card-action">
-                    <a
-                      aria-label="Visit Interpol8r web app"
-                      href="https://interpol8r.herokuapp.com/"
-                      target="_blank"
-                      data-position="top"
-                      data-tooltip="View Online"
-                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                      ><i class="fa fa-external-link"></i></a> 
-                    <a
-                      aria-label="Visit the GitHub repo for chllenge solution"
-                      href="https://github.com/BravoHoseok/Genesis-GV80"
-                      target="_blank"
-                      data-position="top"
-                      data-tooltip="View Source"
-                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
-                      ><i class="fa fa-github"></i
-                    ></a>
-                  </div>
-                </div>-->
               </div>
             </div>
             <!-- End of Prj Other -->
-         </div>
         </div>
       </section>
       <!-- End of Projects section -->
