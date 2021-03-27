@@ -240,7 +240,7 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 a.hoverline:hover {
-  border-bottom: 3px solid #6E6E6E !important;
+  border-bottom: 3px solid #009688 !important;
 }
 #skills .card.large {
   height: 360px;
