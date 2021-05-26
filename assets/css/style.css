@@ -78,7 +78,7 @@ ul.side-nav.fixed li.logo {
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 105px;
-  padding: 3px 10px 10px;
+  padding: 20px 10px 20px;
 }
 ul.side-nav.fixed li.logo a {
   font-weight: 200;
