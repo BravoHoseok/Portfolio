@@ -103,6 +103,7 @@ li.logo span {
   font-size: xx-large;
   line-height: inherit;
   margin: inherit;
+  padding-left: 15px;
   font-weight: 400;
 }
 .container {
