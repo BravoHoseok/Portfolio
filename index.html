@@ -591,21 +591,15 @@
                     </span>
                   <p>
                     <em class="grey-text">
-                        FATC panel combined with Touch System, TFT LCD, and Haptic function
+                        OTA (On The Air) app project starts with the aim to make OTA as a general standard independent to specific operating systems. As IoT devices are getting increased, we need to consider "How to manage tons of its devices in terms of cost, maintenance, and security". To do this, OEMs normally depends on OTA update system. However, they adopt their own OTA policy on their specific operating system, which causes that some IoT devices holds brand new features and up-to-date security, whereas other devices stay old version software with vulnerable security. In this project, we implement OTA app with high Portability on Tock OS by making the standard which can be widely used without any restriction on the diverse software platform.
                     </em>           
                   </p>
                   <ul>
                     <li>
-                        Devised the software module that receives input information through I2C, that converts the information to gesture data, and that sends the data to HMI and an HVAC main controller via CAN on RTOS platform
+                        Implemented OTA (Over the Air) app and kernel interfaces on Tock OS, enabling new apps to be updated at runtime
                     </li>
                     <li>
-                        Designed Dynamic View, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function/Module Priority
-                    </li>
-                    <li>
-                        Implemented a software tool that automatically generates the source code including touch information and executes verification process
-                    </li>
-                    <li>
-                        Defined the functional specification and verification process of the screen touch system
+                        Developed the python tool that transfers application binary image to Cortex-m4 MCU via UART, replacing Ethernet communication
                     </li>       
                     <p>
                         &#x1F4E3; For more details, please click the 'Git-Hub Icon' on the right side of the top
