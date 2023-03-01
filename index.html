@@ -599,7 +599,7 @@
                         Devised the software module that receives input information through I2C, that converts the information to gesture data, and that sends the data to HMI and an HVAC main controller via CAN on RTOS platform
                     </li>
                     <li>
-                        Designed Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function/Module Priority
+                        Designed Dynamic View, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function/Module Priority
                     </li>
                     <li>
                         Implemented a software tool that automatically generates the source code including touch information and executes verification process
@@ -681,28 +681,21 @@
                     </span>
                   <p>
                     <em class="grey-text">
-                        FATC controller combined with 0D and 1D touch system
+                        HVAC controller (FATC) combined with button and slide touch system
                     </em>           
                   </p>
                   <ul>
-                    <span class="card-title brown-text">Development History</span>
                     <li>
-                        Devised a system that receives input information (touch) through SPI, that converts the information to gesture data through algorithms, and that sends the data a key software module
+                        Devised the software module that receives input information through SPI, that converts the information to gesture data, and that links the data to software interface for applications
                     </li>
                     <li>
-                        Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
+                        Designed Dynamic View, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function/Module Priority
                     </li>
                     <li>
-                        Programmed MCU device drivers and software of 'Touch System’, integrating them into the SW platform
+                        Implemented device driver, application software, filter (Median, Kalman), variable threshold, and coordinate detection algorithm
                     </li>
                     <li>
-                        Implemented SPI driver between two microprocessors that have heterogeneous operation speed
-                    </li>
-                    <li>
-                        Realized filter (Median, Kalman), variable threshold, and position generation algorithms
-                    </li>
-                    <li>
-                        Created two 8-bit microprocessor update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-SPI), Script Tool converting Hex files
+                        Established the update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-SPI), Script Tool converting Hex files
                     </li>
                     <p>
                         &#x1F4E3; For more details, please click above 'Git-Hub Icon'
@@ -738,25 +731,21 @@
                     </span>
                   <p>
                     <em class="grey-text">
-                        FATC panel combined with 'Touch Proximity' and 'Interactive Illumination' function
+                        HVAC controller (FATC) combined with proximity system
                     </em>           
                   </p>
                   <ul>
-                    <span class="card-title brown-text">Development History</span>
                     <li>
-                        Devised a system that receives input information through I2C, that recognizes proximity gestures, that contols background illumination
+                        Devised the software module that receives input information through I2C, that converts the information to gesture data, and that contols background illumination
                     </li>
                     <li>
-                        Designed software modules: Dynamic View, Gesture Algorithm, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function Priority
+                        Designed Dynamic View, Data Structure, Module Dependency, Module Active/Inactive Sequence, Function/Module Priority
                     </li>
                     <li>
-                        Programmed MCU device drivers and touch software, integrating them into the SW platform
+                        Implemented device driver, application software, filter (Median, Kalman), fast reference tracking, and pre-emphasis analog signal boosting algorithm
                     </li>
                     <li>
-                        Realized a software algorithm combined with filter (Median, Kalmanm Butterworth), fast reference tracking(IIR), and analog signal boosting(pre-emphasis)
-                    </li>
-                    <li>
-                        Created 8-bit microprocessor update system: External Update Tool, Flash Boot Loader(FBL), GateWay(CAN-I2C), Script Tool converting Hex files
+                        Established the update system: External Update Tool, Flash Boot Loader (FBL), GateWay (CAN-SPI), Script Tool converting Hex files
                     </li>
                     <p>
                         &#x1F4E3; For more details, please click above 'Git-Hub Icon'
