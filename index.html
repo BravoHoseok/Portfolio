@@ -596,7 +596,7 @@
                   </p>
                   <ul>
                     <li>
-                        Implemented OTA (Over the Air) app and kernel interfaces on Tock OS, enabling new apps to be updated at runtime
+                        Implemented OTA (Over the Air) app and kernel interfaces on Tock OS, enabling new apps to be installed at runtime
                     </li>
                     <li>
                         Developed the python tool that transfers application binary image to Cortex-m4 MCU via UART, replacing Ethernet communication
@@ -636,12 +636,15 @@
                     </span>
                   <p>
                     <em class="grey-text">
-                        HVAC controller (FATC) combined with button and slide touch system
+                        This project starts with the aim to find injected corner case instruction sequences, to modify them, and to make disassembler recognize them correctly. In binary level vulnerability detection, the disassembler is the backbone to analyze binary format files (e.g., pyc file). However, the disassembler assumes that the format of binary file has underlying architecture. Thus, if attackers inject malicious corner case instruction sequences to the victim binary file, it is hard to analyze them with reverse engineering, ultimately destroying the assumed format. In this project, we present a methodology that modifies the corner case sequences and makes the disassembler recognize the modified files by using pyxasm, pyxdis, and uncompyle6.
                     </em>           
                   </p>
                   <ul>
                     <li>
-                        Devised the software module that receives input information through SPI, that converts the information to gesture data, and that links the data to software interface for applications
+                        Modified the open source (Disassembler, Assembler) by analyzing bytecode, fitting into the purpose of Pyc Decompiler project
+                    </li>
+                    <li>
+                        Verified the modifed tools by feeding one hundred open source pyc files
                     </li>
                     <p>
                         &#x1F4E3; For more details, please click the 'Git-Hub Icon' on the right side of the top
